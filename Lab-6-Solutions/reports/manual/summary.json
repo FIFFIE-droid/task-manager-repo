@@ -1,0 +1,9 @@
+{
+  "run": "manual",
+  "module_statement_coverage_percent": 45.83,
+  "selected_function_body_coverage_percent": 90.91,
+  "test_functions": 3,
+  "assert_statements": 3,
+  "pytest_raises_checks": 0,
+  "pytest_exit_code": 0
+}

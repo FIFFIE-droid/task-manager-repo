@@ -1,0 +1,7 @@
+{
+  "phase": "seed",
+  "started_utc": "2026-10-04T20:31:03.156822+00:00",
+  "locator_changed": false,
+  "remote_url": "http://localhost:8085",
+  "pytest_exit_code": 0
+}

@@ -1,0 +1,7 @@
+{
+  "phase": "healing",
+  "started_utc": "2026-10-04T20:32:41.809128+00:00",
+  "locator_changed": true,
+  "remote_url": "http://localhost:8085",
+  "pytest_exit_code": 0
+}

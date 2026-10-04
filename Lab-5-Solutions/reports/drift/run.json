@@ -1,0 +1,7 @@
+{
+  "phase": "drift",
+  "started_utc": "2026-10-02T07:00:13.906583+00:00",
+  "locator_changed": true,
+  "remote_url": null,
+  "pytest_exit_code": 1
+}

@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.4, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Administrator\AppData\Local\Programs\Python\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Administrator\OneDrive\Documentos\YEAR_4_sem_1\task-manager-repo
+configfile: pytest.ini
+plugins: cov-7.1.0
+collecting ... collected 5 items
+
+Lab-5-Solutions/test_lab5.py::test_demo_page[UI01_text_input] PASSED     [ 20%]
+Lab-5-Solutions/test_lab5.py::test_demo_page[UI02_textarea] PASSED       [ 40%]
+Lab-5-Solutions/test_lab5.py::test_demo_page[UI03_button_colour] PASSED  [ 60%]
+Lab-5-Solutions/test_lab5.py::test_demo_page[UI04_dropdown] PASSED       [ 80%]
+Lab-5-Solutions/test_lab5.py::test_demo_page[UI05_checkbox] PASSED       [100%]
+
+- generated xml file: C:\Users\Administrator\OneDrive\Documentos\YEAR_4_sem_1\task-manager-repo\Lab-5-Solutions\reports\seed\results.xml -
+============================= 5 passed in 34.55s ==============================

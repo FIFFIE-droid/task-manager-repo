@@ -1,0 +1,7 @@
+[
+  {"id": "UI01_text_input", "action": "text", "input": "Study COMP441", "expected": "Study COMP441"},
+  {"id": "UI02_textarea", "action": "notes", "input": "Lab 5 browser automation", "expected": "Lab 5 browser automation"},
+  {"id": "UI03_button_colour", "action": "button", "expected": {"text": "Click Me (Purple)", "colour": "#800080", "paragraph": "This Text is Purple"}},
+  {"id": "UI04_dropdown", "action": "select", "input": "Set to 75%", "expected": {"value": "75%", "meter": 0.75}},
+  {"id": "UI05_checkbox", "action": "checkbox", "input": true, "expected": true}
+]

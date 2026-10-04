@@ -1,0 +1,9 @@
+{
+  "run": "combined",
+  "module_statement_coverage_percent": 47.92,
+  "selected_function_body_coverage_percent": 100.0,
+  "test_functions": 12,
+  "assert_statements": 12,
+  "pytest_raises_checks": 1,
+  "pytest_exit_code": 0
+}

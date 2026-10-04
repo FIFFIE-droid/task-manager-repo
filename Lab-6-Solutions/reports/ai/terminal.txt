@@ -1,0 +1,30 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.4, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Administrator\AppData\Local\Programs\Python\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Administrator\OneDrive\Documentos\YEAR_4_sem_1\task-manager-repo
+configfile: pytest.ini
+plugins: cov-7.1.0
+collecting ... collected 9 items
+
+Lab-6-Solutions/test_ai_generated.py::test_remove_existing_id_preserves_other_tasks PASSED [ 11%]
+Lab-6-Solutions/test_ai_generated.py::test_remove_unknown_id_leaves_tasks_unchanged PASSED [ 22%]
+Lab-6-Solutions/test_ai_generated.py::test_remove_from_empty_list PASSED [ 33%]
+Lab-6-Solutions/test_ai_generated.py::test_save_preserves_every_field PASSED [ 44%]
+Lab-6-Solutions/test_ai_generated.py::test_save_empty_list PASSED        [ 55%]
+Lab-6-Solutions/test_ai_generated.py::test_save_replaces_old_file_contents PASSED [ 66%]
+Lab-6-Solutions/test_ai_generated.py::test_load_existing_json_preserves_data PASSED [ 77%]
+Lab-6-Solutions/test_ai_generated.py::test_load_missing_file_returns_empty_list PASSED [ 88%]
+Lab-6-Solutions/test_ai_generated.py::test_load_invalid_json_raises_decoder_error PASSED [100%]
+
+- generated xml file: C:\Users\Administrator\OneDrive\Documentos\YEAR_4_sem_1\task-manager-repo\Lab-6-Solutions\reports\ai\results.xml -
+=============================== tests coverage ================================
+_______________ coverage: platform win32, python 3.11.4-final-0 _______________
+
+Name           Stmts   Miss  Cover   Missing
+--------------------------------------------
+app\tasks.py      48     25    48%   25-33, 38-42, 47-51, 56-61, 66-68, 81-84
+--------------------------------------------
+TOTAL             48     25    48%
+Coverage HTML written to dir C:\Users\Administrator\OneDrive\Documentos\YEAR_4_sem_1\task-manager-repo\Lab-6-Solutions\reports\ai\html
+Coverage JSON written to file C:\Users\Administrator\OneDrive\Documentos\YEAR_4_sem_1\task-manager-repo\Lab-6-Solutions\reports\ai\coverage.json
+============================== 9 passed in 1.46s ==============================

@@ -1,0 +1,4 @@
+run,module_statement_coverage_percent,selected_function_body_coverage_percent,test_functions,assert_statements,pytest_raises_checks,pytest_exit_code
+ai,47.92,100.0,9,9,1,0
+manual,45.83,90.91,3,3,0,0
+combined,47.92,100.0,12,12,1,0

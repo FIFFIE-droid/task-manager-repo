@@ -1,0 +1,9 @@
+{
+  "run": "ai",
+  "module_statement_coverage_percent": 47.92,
+  "selected_function_body_coverage_percent": 100.0,
+  "test_functions": 9,
+  "assert_statements": 9,
+  "pytest_raises_checks": 1,
+  "pytest_exit_code": 0
+}

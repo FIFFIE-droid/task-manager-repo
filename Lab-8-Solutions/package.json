@@ -1,0 +1,6 @@
+{
+  "name": "comp441-lab8-visual-accessibility",
+  "private": true,
+  "scripts": {"test:visual": "playwright test tests/visual.spec.js", "test:a11y": "playwright test tests/accessibility.spec.js"},
+  "devDependencies": {"@axe-core/playwright": "^4.10.2", "@playwright/test": "^1.50.0"}
+}

@@ -1,0 +1,1 @@
+Run `python Lab-7-Solutions/run_mutations.py` from the repository root to regenerate the CSV and JSON from current source/tests. Results are actual outputs of this harness. It is a small custom mutation harness, not mutmut; explain that tool substitution in the submission.

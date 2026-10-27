@@ -1,0 +1,178 @@
+mutant,suite,status,detail
+M1_remove_comparison,ai,KILLED," 2, 'title': 'Study'} != {'id': 1, 'title': 'Read'}
+E         Right contains one more item: {'id': 2, 'title': 'Study'}
+E         Use -v to get more diff
+
+Lab-6-Solutions\test_ai_generated.py:27: AssertionError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_ai_generated.py::test_remove_existing_id_preserves_other_tasks
+FAILED Lab-6-Solutions/test_ai_generated.py::test_remove_unknown_id_leaves_tasks_unchanged
+2 failed, 7 passed in 1.11s"
+M2_remove_no_match_break,ai,KILLED,"ead'}, {'id': 3, 'title': 'Submit'}], task_id = 2
+
+    def remove_task(tasks, task_id):
+        """"""Remove a task by id.""""""
+        for i in range(len(tasks)):
+>           if tasks[i][""id""] == task_id:
+               ^^^^^^^^
+E           IndexError: list index out of range
+
+app\tasks.py:74: IndexError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_ai_generated.py::test_remove_existing_id_preserves_other_tasks
+1 failed, 8 passed in 0.26s"
+M3_save_wrong_payload,ai,KILLED,": assert [] == [{'id': 1, 't...done': False}]
+E         
+E         Right contains one more item: {'id': 1, 'title': 'New task', 'done': False}
+E         Use -v to get more diff
+
+Lab-6-Solutions\test_ai_generated.py:53: AssertionError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_ai_generated.py::test_save_preserves_every_field
+FAILED Lab-6-Solutions/test_ai_generated.py::test_save_replaces_old_file_contents
+2 failed, 7 passed in 0.22s"
+M4_missing_file_wrong_default,ai,KILLED,"(isolated_file):
+>       assert task_module.load_tasks() == []
+E       assert None == []
+E        +  where None = <function load_tasks at 0x000001C7D86BB6A0>()
+E        +    where <function load_tasks at 0x000001C7D86BB6A0> = task_module.load_tasks
+
+Lab-6-Solutions\test_ai_generated.py:65: AssertionError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_ai_generated.py::test_load_missing_file_returns_empty_list
+1 failed, 8 passed in 0.23s"
+M5_load_wrong_mode,ai,KILLED,"ant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+E       io.UnsupportedOperation: not readable
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py:293: UnsupportedOperation
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_ai_generated.py::test_load_existing_json_preserves_data
+FAILED Lab-6-Solutions/test_ai_generated.py::test_load_invalid_json_raises_decoder_error
+2 failed, 7 passed in 0.26s"
+M6_save_no_write,ai,KILLED,": assert [] == [{'id': 1, 't...done': False}]
+E         
+E         Right contains one more item: {'id': 1, 'title': 'New task', 'done': False}
+E         Use -v to get more diff
+
+Lab-6-Solutions\test_ai_generated.py:53: AssertionError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_ai_generated.py::test_save_preserves_every_field
+FAILED Lab-6-Solutions/test_ai_generated.py::test_save_replaces_old_file_contents
+2 failed, 7 passed in 0.15s"
+M1_remove_comparison,manual,KILLED,"== [{""id"": 2, ""title"": ""Submit""}]
+E       AssertionError: assert [{'id': 1, 'title': 'Study'}] == [{'id': 2, 'title': 'Submit'}]
+E         
+E         At index 0 diff: {'id': 1, 'title': 'Study'} != {'id': 2, 'title': 'Submit'}
+E         Use -v to get more diff
+
+Lab-6-Solutions\test_manual.py:15: AssertionError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_manual.py::test_remove_a_task - AssertionError: a...
+1 failed, 2 passed in 0.17s"
+M2_remove_no_match_break,manual,KILLED," _ _ _
+
+tasks = [{'id': 2, 'title': 'Submit'}], task_id = 1
+
+    def remove_task(tasks, task_id):
+        """"""Remove a task by id.""""""
+        for i in range(len(tasks)):
+>           if tasks[i][""id""] == task_id:
+               ^^^^^^^^
+E           IndexError: list index out of range
+
+app\tasks.py:74: IndexError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_manual.py::test_remove_a_task - IndexError: list ...
+1 failed, 2 passed in 0.17s"
+M3_save_wrong_payload,manual,KILLED,"tasks = json.load(f)
+    
+>       assert loaded_tasks == tasks
+E       AssertionError: assert [] == [{'id': 1, 't...e': 'Submit'}]
+E         
+E         Right contains 2 more items, first extra item: {'id': 1, 'title': 'Study'}
+E         Use -v to get more diff
+
+Lab-6-Solutions\test_manual.py:44: AssertionError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_manual.py::test_save_tasks - AssertionError: asse...
+1 failed, 2 passed in 0.15s"
+M4_missing_file_wrong_default,manual,SURVIVED,"...                                                                      [100%]
+3 passed in 0.07s"
+M5_load_wrong_mode,manual,KILLED,"ject_hook,
+            parse_float=parse_float, parse_int=parse_int,
+            parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+E       io.UnsupportedOperation: not readable
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py:293: UnsupportedOperation
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_manual.py::test_load_tasks - io.UnsupportedOperat...
+1 failed, 2 passed in 0.19s"
+M6_save_no_write,manual,KILLED,"tasks = json.load(f)
+    
+>       assert loaded_tasks == tasks
+E       AssertionError: assert [] == [{'id': 1, 't...e': 'Submit'}]
+E         
+E         Right contains 2 more items, first extra item: {'id': 1, 'title': 'Study'}
+E         Use -v to get more diff
+
+Lab-6-Solutions\test_manual.py:44: AssertionError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_manual.py::test_save_tasks - AssertionError: asse...
+1 failed, 2 passed in 0.13s"
+M1_remove_comparison,combined,KILLED,"e': 'Study'} != {'id': 2, 'title': 'Submit'}
+E         Use -v to get more diff
+
+Lab-6-Solutions\test_manual.py:15: AssertionError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_ai_generated.py::test_remove_existing_id_preserves_other_tasks
+FAILED Lab-6-Solutions/test_ai_generated.py::test_remove_unknown_id_leaves_tasks_unchanged
+FAILED Lab-6-Solutions/test_manual.py::test_remove_a_task - AssertionError: a...
+3 failed, 9 passed in 0.24s"
+M2_remove_no_match_break,combined,KILLED,"_id):
+        """"""Remove a task by id.""""""
+        for i in range(len(tasks)):
+>           if tasks[i][""id""] == task_id:
+               ^^^^^^^^
+E           IndexError: list index out of range
+
+app\tasks.py:74: IndexError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_ai_generated.py::test_remove_existing_id_preserves_other_tasks
+FAILED Lab-6-Solutions/test_manual.py::test_remove_a_task - IndexError: list ...
+2 failed, 10 passed in 0.21s"
+M3_save_wrong_payload,combined,KILLED,"ontains 2 more items, first extra item: {'id': 1, 'title': 'Study'}
+E         Use -v to get more diff
+
+Lab-6-Solutions\test_manual.py:44: AssertionError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_ai_generated.py::test_save_preserves_every_field
+FAILED Lab-6-Solutions/test_ai_generated.py::test_save_replaces_old_file_contents
+FAILED Lab-6-Solutions/test_manual.py::test_save_tasks - AssertionError: asse...
+3 failed, 9 passed in 0.19s"
+M4_missing_file_wrong_default,combined,KILLED,"isolated_file):
+>       assert task_module.load_tasks() == []
+E       assert None == []
+E        +  where None = <function load_tasks at 0x000002C973B5B6A0>()
+E        +    where <function load_tasks at 0x000002C973B5B6A0> = task_module.load_tasks
+
+Lab-6-Solutions\test_ai_generated.py:65: AssertionError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_ai_generated.py::test_load_missing_file_returns_empty_list
+1 failed, 11 passed in 0.25s"
+M5_load_wrong_mode,combined,KILLED,"rtedOperation: not readable
+
+C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py:293: UnsupportedOperation
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_ai_generated.py::test_load_existing_json_preserves_data
+FAILED Lab-6-Solutions/test_ai_generated.py::test_load_invalid_json_raises_decoder_error
+FAILED Lab-6-Solutions/test_manual.py::test_load_tasks - io.UnsupportedOperat...
+3 failed, 9 passed in 0.21s"
+M6_save_no_write,combined,KILLED,"ontains 2 more items, first extra item: {'id': 1, 'title': 'Study'}
+E         Use -v to get more diff
+
+Lab-6-Solutions\test_manual.py:44: AssertionError
+=========================== short test summary info ===========================
+FAILED Lab-6-Solutions/test_ai_generated.py::test_save_preserves_every_field
+FAILED Lab-6-Solutions/test_ai_generated.py::test_save_replaces_old_file_contents
+FAILED Lab-6-Solutions/test_manual.py::test_save_tasks - AssertionError: asse...
+3 failed, 9 passed in 0.19s"
